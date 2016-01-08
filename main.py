@@ -1,23 +1,31 @@
 import webapp2
+from google.appengine.ext import ndb
 
 from handler import Handler
 from comment import Comment
 
-comments = []
+DEFAULT_KEY = ndb.Key('KEY', "DEFAULT_KEY")
 
 class PageHandler(Handler):
-    def get(self, page="main.html"):
-        self.render(page, comments=comments, page=page)
+    def get(self):
+
+        # Get all the comments, sorted by date
+        comment_query = Comment.query(ancestor=DEFAULT_KEY).order(-Comment.date)
+        comments = comment_query.fetch()
+
+        self.render("main.html", comments=comments)
 
 class CommentHandler(Handler):
     def post(self):
         message = self.request.get("message")
         name = self.request.get("name")
-        page = self.request.get("page")
 
-        new_comment = Comment(name, message)
+        new_comment = Comment(parent=DEFAULT_KEY)
+        new_comment.message = message
+        new_comment.name = name
 
-        comments.append(new_comment)
+        # Save in the data-store
+        new_comment.put()
 
         self.redirect("/")
 

@@ -2,6 +2,7 @@
 <html>
     <head>
         <title> {% block title %} {% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
     </head>
 
     <body >
@@ -12,23 +13,29 @@
             <h2> Comments </h2>
             <ul>
                 {% for comment in comments %}
-                    <li> {{ comment.name | safe }} : {{ comment.message | safe}} </li>
+                    <li> 
+                        <div class="comment">
+                            <div class="comment-author"> {{ comment.name | safe }} </div>
+                            <div class="comment-message"> {{ comment.message | safe}} </div>
+                        </div>
+                    </li>
                 {% endfor %}
             </ul>
         {% endif %}
 
         <form action="/add_comment" method="post">
-            <input type="hidden" name="page" value="{{ page }}"/>
-            <div>
 
+            <div>
                 Name <input name="name"/>
                 <br/>
                 Comment <br/>
                 <textarea name="message" rows="3" cols="60"></textarea>
             </div>
+
             <div>
                 <input type="submit" value="Post Comment">
             </div>
+
         </form>
     </body>
 </html>

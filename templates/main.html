@@ -1,9 +1,271 @@
-{% extends "base.html" %}
+{% extends "base.html" %} 
 
-{% block title %} Ama's Main Page {% endblock %}
+{% block title %} Ama's Notes {% endblock %}
 
 {% block content %}
-    <h1> PROGRAMMING </h1>
 
-    <p> These are my notes yo!. </p>
+    <h1>Important Concepts</h1>
+    <div class="lesson-box">
+      <h2>Lesson 1: Basics of the Web and HTML</h2>
+      
+        <div class="concept-box">
+          <div class="concept-title">
+            <h3>Overview of the Internet</h3>
+          </div>
+            <div class="concept-description">
+              <p>
+                Browser makes a request via the internet-the world's largest computer network, 
+                to the servers via <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">
+                <b>HTTP</b></a>. Servers respond with files that the browser displays.
+                <a href="https://en.wikipedia.org/wiki/HTML"><b>HTML</b></a> is the main document type of the web. 
+                It stands for <b>Hypertext Markup Language.</b>
+                It is made up of text content(what you see), markup(what it looks like) and 
+                references ( ex: images, videos and other documents).
+              </p>
+            </div>
+        </div>
+
+        <div class="concept-box">
+          <div class="concept-title">
+            <h3>Introduction to HTML</h3>
+          </div>
+            <div class="concept-description">
+              <ul>
+                <li>
+                  Tag: An HTML tag is contained within angled brackets. Most tags have 
+                  an opening tag and a closing tag. Some tags are void and they do not 
+                  require a closing tag. Break or <span class="code">Br</span> is an example of a void tag.
+                </li>
+
+                <li>
+                  Element: An HTML element refers to everything within a set of opening 
+                  and closing tags.
+                </li>
+
+                <li>
+                  Attribute: This is a property of an HTML element. Ex: image tag = <span class="code">&lt;img 
+                  src ="url"&gt;</span> , making links using the anchor tag = <span class="code">&lt;a href"___"&gt;</span>.
+                </li>
+
+                <li>
+                  Inline vs Block : <span class="code">break</span> and <span class="code">span</span> are inline and <span class="code">p</span> and 
+                  <span class="code">div</span> are block. 
+                  Inline tag just ends a line whereas the block makes an invisible box
+                  around text which can have height and width. Moreover, <span class="code">span</span> and <span class="code">div</span> 
+                  contain content and you can attach styles to them to adjust the way
+                  they behave.
+                </li>
+              </ul>
+            </div> 
+        </div>
+
+        <div class="concept-box">
+          <div class="concept-title"> 
+            <h3>Why are computers considered stupid?</h3>
+          </div>
+            <div class="concept-description">
+              <p>
+                Computers are considered stupid because programmers need to write <b>exactly</b> the 
+                way a computer understands or write with correct <b>"syntax"</b>. This is good because 
+                it gives you the power and if you know how to talk to a computer you can tell 
+                it to do anything you want!
+              </p>
+            </div>    
+          </div>
+        </div>  
+    <!-- END OF LESSON 1 -->
+
+    <div class="lesson-box">
+      <h2>Lesson 2: Creating a Structured Document with HTML</h2>
+      
+      <div class="concept-box">
+        <div class="concept-title">
+          <h3>Observing Wiki Pages and Structure</h3>
+        </div>
+
+        <div class="concept-description">
+           <ul>
+            <li>Not all elements are visible </li>
+
+            <li>All elements are rectangular </li>
+
+            <li>If you go deep enough in the HTML you can read the text as printed on the page</li>
+          </ul>
+        </div>     
+      </div>
+
+      <div class="concept-box">
+        <div class="concept-title">
+          <h3>Tree Like Structure</h3>
+        </div>
+
+        <div class="concept-description">
+          <ul>
+            <li>HTML elements have more elements inside of them. There are boxes inside of 
+            boxes and so on surrounded
+            by an opening tag and a closing tag.</li>
+
+            <li>When programmers talk about the <b>DOM</b>(Document Object Model) 
+            they are talking about the tree like structure of a page. </li>
+
+            <li>HTML is the language of the web and it has syntax and rules which are written in a document using HTML syntax and rules. Basic rules are tags. </li>
+
+            <li>Browser turns them in to elements that turn to a tree that uses DOM. It is a standard convention that interacts with elements in HTML.</li>
+
+            <li>HTML tag creates an element in the DOM that the browser uses to display the page. 
+            Element is created from the starting tag and the ending tag. Everything in between is content.</li>
+
+            <li><b>Parent-Child Relationship</b> of HTML elements: Elements inside others have a parent-child relationship while elements with the same parent have a sibling relationship. Styling errors may appear when the nested elements don't line up correctly. For example from <b>line 104</b> to <b>120</b> <span class="code">&lt;div&gt; </span> is the top most element, <span class="code">&lt;ul&gt;</span> is it's child. </li>
+            <li> CSS is used to style the elements displayed on the page. HTML tells the browser information on what style to use and where to get it.</li>
+          </ul>
+        </div>
+      </div>  
+
+      <div class="concept-box">
+        <div class="concept-title">
+          <h3>HTML, CSS and Java Script have different functions</h3>
+        </div>
+
+        <div class="concept-description">
+          <ul>  
+            <li>HTML and CSS are both languages </li>
+            <li>HTML controls the structure of a web page </li>
+            <li><b>CSS</b>(Cascading Style Sheets) controls the style of a page (how it looks) and is written in markup language.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept-box">
+        <div class="concept-title">
+          <h3>Border Radius and Class Attributes</h3>
+        </div>
+
+        <div class="concept-description">
+          <ul>
+            <li>Adding rounded borders to a <span class="code">div</span> element.</li>
+            <li>Class attributes are labels for the boxes.</li>  
+          </ul>
+        </div>
+      </div>
+      
+    </div> 
+    <!-- END OF LESSON 2 -->
+
+    <div class="lesson-box">
+      <h2>Lesson 3: Adding CSS Style and HTML Structure</h2>
+      
+      <div class="concept-box">
+        <div class="concept-title">
+          <h3>Servers</h3>
+        </div>
+
+        <div class="concept-description">
+          <ul>
+            <li>CSS stands for Cascading Style Sheets. It is code written to control the "style" of HTML elements. </li>
+
+            <li>Style can refer to many things. It can be an HTML element, HTML attribute
+            or the general look of the web page.</li>
+
+            <li>A rule is a line of CSS that describes the value that a certain attribute should take. </li>
+
+            <li>Class refers to a group of elements that can be styled together.</li>
+
+            <li>ID is a unique identifier that uniquely identifies an element in HTML</li>
+          </ul>
+        </div> 
+      </div>
+
+      <div class="concept-box">
+        <div class="concept-title">
+          <h3>3 Methods to include CSS styling in the web page</h3>
+        </div>
+
+        <div>
+          <ul>
+            <li>Write CSS in the <em>head</em> of HTML </li>
+            <li>Link HTML to a separate CSS file <b>(RECOMMENDED)</b></li>
+            <li>Write style inline with HTML <b>(BAD)</b></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept-box">
+        <div class="concept-title">
+          <h3>Box Sizing and Positioning</h3>
+        </div>
+
+        <div class="concept-description">
+          <p>
+            HTML elements are boxes and each box has 4 components. It can be hard to get the size of the box 
+            just right due to these many components. So we use two techniques to solve sizing issues.<br>
+          </p>
+          <ul>
+            <li>set size in <b>%</b> </li>
+
+            <li>set the box sizing attribute to border-box for every element </li>
+
+            <li>Adding the display flex rule will allow for divs to appear next to each other</li>
+          </ul> 
+        </div> 
+      </div>  
+
+      <div class="concept-box">  
+        <div class="concept-title">
+          <h3>Importance of Avoiding Repetition</h3>
+        </div> 
+        <div class="concept-description">
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself"> <q>Dont Repeat yourself!</q> </a> </li>
+
+            <li>Repetition causes multiple points of error making it difficult to understand and fix the mistakes.</li>
+
+            <li>Avoiding repetition saves time and also copy and paste.</li>
+
+            <li>Allows to develop their code more efficiently and maintain it more effectively. </li>
+          </ul> 
+        </div>
+      </div>
+    <div class="lesson-box">
+      <h2>Lesson 4: Introduction to Networks</h2>
+      
+      <div class="concept-box">
+        <div class="concept-title">
+          <h3>Servers</h3>
+        </div>
+
+        <div class="concept-description">
+          <p>
+            Purpose of servers is to respond to HTTP requests. there are static and dynamic content. Static ones are prewritten. ex: Images, HTML. Dynamic are made on the fly by web applications. Web apps live on a server, speaks to HTTP and generates content that your browser requests.  When an web application thats hosted on a server, gets a request it can respond with dynamically generated content. We can put data in to a web application to persist with POST requests. We can retrieve those data back with GET requests. 
+          </p>
+        </div> 
+      </div>
+
+      <div class="concept-box">
+        <div class="concept-title">
+          <h3>Importance of Validating inputs</h3>
+        </div>
+
+        <div>
+          <p>
+            Validating inputs will help your application to prevent vulnerabilities exploited by malicious users(Ex: instead of a valid input someone can add HTML in our code and mess it up). Using Dropdowns can limit what the user can actively enter. The other method is to verify what the users enter and complain if the data is bad. For example "> should not be allowed in the input. This can be fixed by escaping.
+
+          </p>
+        </div>
+      </div>
+
+      <div class="concept-box">
+        <div class="concept-title">
+          <h3>HTML Templates and Abstractions</h3>
+        </div>
+
+        <div class="concept-description">
+          <p>
+            HTML templates' goal is to avoid repitition in HTML. Template library is a library to build complicated strings. jinja templates are just .html files that help to use logical sytax to dynamically change the content.  jinja2 is built into the google appengine. Templates separate different types of code, makes more readable code, more secure websites and HTML is easier to modify.
+            
+          </p>
+        </div> 
+      </div>  
+    </div> 
+    </div> 
+  
 {% endblock %}

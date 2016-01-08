@@ -1,0 +1,59 @@
+body {
+    padding: 20px 10px;
+    font-family: geneva;
+    max-width: 2000px;
+    margin: 0 auto; 
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Marble_pattern_008.jpg/1280px-Marble_pattern_008.jpg"); 
+}
+
+h1 {
+    color: #171717;
+    font: bold 64px geneva; 
+    background-color: #52514e;
+    text-align: center;
+    padding: 5px;
+    border: 3px solid #242626;  
+}
+
+h2 {
+    color: #52514e;
+    font-size: 36px; 
+    font-weight: bolder; 
+    margin: 10px;
+}
+
+.concept-title {
+    color: #52514e;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.lesson-box {
+    border-color: #0d0d0d;
+    border-radius: 20px;
+    background-color: #b6b8be;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.concept-box {
+    background-color: #e0e0dc;
+    margin: 10px;
+    padding: 4px;
+    border-radius: 4px;
+    color: black;
+}
+
+.concept-description {
+    font-weight: lighter;
+    margin: 6px;
+}   
+
+.code {
+    font-weight: bold;
+    font-family: courier;
+    color: black;
+    padding-left: 4px;
+    padding-right: 4px; 
+}
+

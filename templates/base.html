@@ -6,36 +6,46 @@
     </head>
 
     <body >
+
+        <!-- Main page content will be inserted in here -->
         {% block content %}
         {% endblock %}
 
         {% if comments %}
-            <h2> Comments </h2>
-            <ul>
-                {% for comment in comments %}
-                    <li> 
-                        <div class="comment">
-                            <div class="comment-author"> {{ comment.name | safe }} </div>
-                            <div class="comment-message"> {{ comment.message | safe}} </div>
-                        </div>
-                    </li>
-                {% endfor %}
-            </ul>
+            <div class= "comment-box">
+                <h2>Comments</h2>
+
+                <ul class="comment-list">
+                    {% for comment in comments %}
+                        <li> 
+                            <div class="comment-author-box">
+                                <div class="comment-author"> {{ comment.name | safe }} :</div> 
+                                <div class="comment-message"> {{ comment.message | safe}} </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
         {% endif %}
 
         <form action="/add_comment" method="post">
-
-            <div>
-                Name <input name="name"/>
+            <div class="name-comment-box">
+                <div class = "name">
+                    Name <br/>
+                    <input name="name"/>
+                </div>
+                
                 <br/>
-                Comment <br/>
-                <textarea name="message" rows="3" cols="60"></textarea>
-            </div>
+                
+                <div class = "comment">
+                    Comment <br/>
+                    <textarea name="message" rows="3" cols="60"></textarea>
+                </div>
 
-            <div>
-                <input type="submit" value="Post Comment">
-            </div>
-
+                <div class = "post-comment">
+                    <input type="submit" value="Post Comment">
+                </div>
+            </div>    
         </form>
     </body>
 </html>

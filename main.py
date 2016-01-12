@@ -20,6 +20,8 @@ class CommentHandler(Handler):
         message = self.request.get("message")
         name = self.request.get("name")
 
+        # create a new comment object
+        # set a message and name to it
         new_comment = Comment(parent=DEFAULT_KEY)
         new_comment.message = message
         new_comment.name = name

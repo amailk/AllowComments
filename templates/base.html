@@ -36,11 +36,17 @@
                 </div>
                 
                 <br/>
-                
+
                 <div class = "comment">
                     Comment <br/>
                     <textarea name="message" rows="3" cols="60"></textarea>
                 </div>
+
+                {% if invalid %}
+                    <div class="comment-error">
+                        <p> Sorry, your comment is invalid! Please try again </p>
+                    </div>
+                {% endif %}
 
                 <div class = "post-comment">
                     <input type="submit" value="Post Comment">

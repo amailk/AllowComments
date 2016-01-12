@@ -19,8 +19,8 @@
                     {% for comment in comments %}
                         <li> 
                             <div class="comment-author-box">
-                                <div class="comment-author"> {{ comment.name | safe }} :</div> 
-                                <div class="comment-message"> {{ comment.message | safe}} </div>
+                                <div class="comment-author"> {{ comment.name }} :</div> 
+                                <div class="comment-message"> {{ comment.message }} </div>
                             </div>
                         </li>
                     {% endfor %}

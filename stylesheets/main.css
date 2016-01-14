@@ -102,3 +102,8 @@ input {
     text-indent: 50px;
 }
 
+.comment-error {
+    color: #ff0000;
+    font: bolder 14px geneva; 
+}
+

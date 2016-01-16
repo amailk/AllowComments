@@ -238,7 +238,13 @@
 
         <div class="concept-description">
           <p>
-            Purpose of servers is to respond to HTTP requests. there are static and dynamic content. Static ones are prewritten. ex: Images, HTML. Dynamic are made on the fly by web applications. Web apps live on a server, speaks to HTTP and generates content that your browser requests.  When a web application thats hosted on a server, gets a request it can respond with dynamically generated content. We can put data in to a web application to persist with POST requests. We can retrieve those data back with GET requests. 
+            Purpose of servers is to respond to HTTP requests. Web apps live on a server, speaks to HTTP and generates content that your browser requests. For example, when a user enters a url in the address bar the browser sends an HTTP GET reqest to the server. Server deciphers the HTTP request, runs the appropriate handler which either responds with static or dynamic content in the form of an HTML document. Static ones are prewritten. ex: Images, HTML. Dynamic are made on the fly by web applications.  When a web application thats hosted on a server, gets a request it can respond with dynamically generated content. Example of an HTTP request : ____. 
+            <ul>
+              <li> <b> 100 Continue </b> - the client should continue with its request. </li>
+              <li> <b> 200 OK </b> - the request has succeeded. </li>
+              <li> <b> 402 payment required </b> - the code is reserved for future use. </li>
+              <li> <b> 400 Bad Request </b> - the request could not be understood by the server due to malformed syntax and the client should not repeat the request without modifications. </li>
+            </ul>
           </p>
         </div> 
       </div>

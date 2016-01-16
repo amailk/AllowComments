@@ -24,22 +24,25 @@ class CommentHandler(Handler):
         message = self.request.get("message")
         name = self.request.get("name")
 
-        # Check if the message is valid or invalid
-        if len(message.strip()) == 0:
+        
+        # Check if message or name is invalid
+        if len(name.strip()) == 0 or len(message.strip()) == 0:
             PageHandler.invalid = True
         else:
             PageHandler.invalid = False
 
             # create a new comment object
             # set a message and name to it
+
             new_comment = Comment(parent=DEFAULT_KEY)
             new_comment.message = message
             new_comment.name = name
 
             # Save in the data-store
             new_comment.put()
+            
+        self.redirect("/#comments")
 
-        self.redirect("/")
 
 # https://webapp-improved.appspot.com/guide/routing.html
 app = webapp2.WSGIApplication([

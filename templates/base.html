@@ -12,7 +12,7 @@
         {% endblock %}
 
         {% if comments %}
-            <div class= "comment-box">
+            <div class= "comment-box" id="comments">
                 <h2>Comments</h2>
 
                 <ul class="comment-list">
@@ -41,7 +41,6 @@
                     Comment <br/>
                     <textarea name="message" rows="3" cols="60"></textarea>
                 </div>
-
                 {% if invalid %}
                     <div class="comment-error">
                         <p> Sorry, your comment is invalid! Please try again </p>
@@ -51,7 +50,7 @@
                 <div class = "post-comment">
                     <input type="submit" value="Post Comment">
                 </div>
-            </div>    
+            </div> 
         </form>
     </body>
 </html>

@@ -1,97 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title> {% block title %} {% endblock %}</title>
-        <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script src="scripts/main.js"></script>
-    </head>
-
-    <body class="main-page" >
-        <div class="main-title">
-            <h1> (a)UDACIOUS </h1>
-        </div>
-        
-        <img class="profile-pic" src="https://pbs.twimg.com/profile_images/683218377398169600/XaJczQXt_400x400.jpg"></img>
-
-        <div class="social-links">
-            <a href="https://twitter.com/amailk" target="_blank">
-                <div class="social"><i class="fa fa-twitter"></i></div>
-            </a>
-            <a href="https://instagram.com/amailk" target="_blank">
-                <div class="social"><i class="fa fa-instagram"></i></div>
-            </a>
-            <a href="https://www.linkedin.com/in/ama-liyanage-5b31a2104?trk=hp-identity-name" target="_blank">
-                <div class="social"><i class="fa fa-linkedin"></i></div>
-            <a href="https://github.com/amailk" target="_blank">
-                <div class="social"><i class="fa fa-github"></i></div>
-            </a>
-        </div>
-        
+<head>
+    <meta charset="utf-8">
+    <title> {% block title %} {% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+</head>
+<section class="top">
+<body class="main-page">
+    <div class="main-title">
+        <h1> (a)UDACIOUS </h1> 
+    </div>
+</section>
+<section class="middle">
+    <div class="nav-bar">
         <div class="three-navs">
             <button id="showAboutMe">About Ama</button>
             <button id="showNotes">Udacity Notes</button>
             <button id="showNextSteps">Next Steps</button>
         </div>
+    </div>
+</section>
 
-        <!-- Main page content will be inserted in here -->
-        <div id="about">
-            {% include "aboutme.html" %}
-        </div>
+    <!-- Main page content will be inserted in here -->
+    <div id="about">
+        {% include "aboutme.html" %}
+    </div>
 
-        <div id="notes">
-            {% include "notes.html" %}
-        </div>
+    <div id="notes">
+        {% include "notes.html" %}
+    </div>
 
-        <div id="next-steps">
-            {% include "nextsteps.html" %}
-        </div>
+    <div id="next-steps">
+        {% include "nextsteps.html" %}
+    </div>
+    
+<!--Comment section starts -->
 
+    <div id="comment-wrapper">
+        {% if comments %}
+            <div class= "comment-box" id="comments">
+                <h2>Comments</h2>
 
-        <div id="comment-wrapper">
-            {% if comments %}
-                <div class= "comment-box" id="comments">
-                    <h2>Comments</h2>
+                <ul class="comment-list">
+                    {% for comment in comments %}
+                        <li> 
+                            <div class="comment-author-box">
+                                <div class="comment-author"> {{ comment.name }} :</div> 
+                                <div class="comment-message"> {{ comment.message }} </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
 
-                    <ul class="comment-list">
-                        {% for comment in comments %}
-                            <li> 
-                                <div class="comment-author-box">
-                                    <div class="comment-author"> {{ comment.name }} :</div> 
-                                    <div class="comment-message"> {{ comment.message }} </div>
-                                </div>
-                            </li>
-                        {% endfor %}
-                    </ul>
+        <form action="/add_comment" method="post">
+            <div class="name-comment-box">
+                <div class = "name">
+                    Name <br/>
+                    <input name="name"/>
                 </div>
-            {% endif %}
+                
+                <br/>
 
-            <form action="/add_comment" method="post">
-                <div class="name-comment-box">
-                    <div class = "name">
-                        Name <br/>
-                        <input name="name"/>
+                <div class = "comment">
+                    Comment <br/>
+                    <textarea name="message" rows="3" cols="60"></textarea>
+                </div>
+                {% if invalid %}
+                    <div class="comment-error">
+                        <p> Sorry, your comment is invalid! Please try again </p>
                     </div>
-                    
-                    <br/>
+                {% endif %}
 
-                    <div class = "comment">
-                        Comment <br/>
-                        <textarea name="message" rows="3" cols="60"></textarea>
-                    </div>
-                    {% if invalid %}
-                        <div class="comment-error">
-                            <p> Sorry, your comment is invalid! Please try again </p>
-                        </div>
-                    {% endif %}
+                <div class = "post-comment">
+                    <input type="submit" value="Post Comment">
+                </div>
+            </div> 
+        </form>
+    </div>
 
-                    <div class = "post-comment">
-                        <input type="submit" value="Post Comment">
-                    </div>
-                </div> 
-            </form>
-        </div>
-    </body>
+    <!--Comment section ends-->
+<!-- <footer>
+    Ama Liyanage
+</footer> -->
+</body>
 </html>

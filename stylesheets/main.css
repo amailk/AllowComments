@@ -1,23 +1,177 @@
+html,body{
+    height:100%;
+    margin:0;
+    background: white
+}
+.main-page {
+    color:#4c4c4c;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+    line-height: 1.5;
+    position: relative;
+    cursor: auto;
+    letter-spacing: 0.05rem;
+    -webkit-font-smoothing: subpixel-antialiased
+}
+
+.top{
+    background:url("http://36.media.tumblr.com/c078cec3240430c46b3a4321f9009a5c/tumblr_nzca753BKO1uuufk2o1_1280.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size:cover;
+    height:30%;
+    width:100%;
+}
+.middle.nav-bar {
+    height:5%;
+    width:100%;   
+}
+
+a{  
+    color:#7ab5fe;
+    text-decoration: none;
+}
+a:hover{
+    color:#4fbfa6;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+.profile {
+    width:50em;
+    background: white;
+    margin:0 auto;
+    position: relative;
+}
+.avatar-container{
+    width:10em;
+    text-align:center;
+    position: absolute;
+    left:15px;
+    top:-5em;
+}
+
+.avatar-container img.avatar{
+    width:10em;
+    height:10em;
+    border-radius:100%;
+    margin-bottom:10px;
+    padding:5px;
+    background:white;
+}
+
+.resume-left, .resume-right{
+    float:left;
+    width:30%;
+    margin-top:50px;
+}
+.personal-info{
+    margin:60px 0px 0px 0px;
+    padding:0;
+    list-style:none;
+}
+.personal-info li{
+    font-size:0.8313rem;
+    font-weight:300;
+    margin-top:15px;
+}
+.personal-info li i{
+    width:40px;
+    font-size:1.2rem;
+    display:inline-block;
+    vertical-align:middle;
+    text-align:center;
+}
+.personal-info li .fa-mobile{
+    font-size:1.7em;
+}
+
+.resume-content {
+    font-weight:300;
+    font-size:0.8313em;
+    line-height:1.4em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased
+   
+}
+.resume-content.bio{
+     padding:10px;
+}
+
+.social-links {
+    padding:10px;
+}
+.social-links .social {
+    display: inline-block;
+    border: none;
+    margin-right: 25px;
+    color:#000000;
+    font-weight:600;
+    font-size:1.6em;
+}
+
+.resume-right {
+    width:70%;
+    padding:0px 0px 0px 45px;
+    box-sizing:border-box;
+}
+
+.my-name {
+    color:#7ab5fe;
+    font-size:26pt;
+    font-weight:300;
+    margin:0px 0px 20px 0px;
+
+}
+.edu-experience {
+    color:#7ab5fe;
+    font-size:12pt;
+    font-weight: 600;
+    margin:0px;
+
+}
+.module{
+    margin-bottom:30px;
+}
+.module .title,.module .sub-title, .module2 .title {
+    font-size:0.813em;
+    font-weight:400;
+}
+.module .sub-title{
+    font-size:13px;
+    font-weight:300;
+}
+
+
 body {
     padding: 20px 300px;
-    font-family: geneva;
     max-width: 2000px;
     margin: 0 auto;  
 }
 
 header {
       text-align: center;
-      background: url("http://40.media.tumblr.com/1828cfe2020472f3edabc680ad0e2326/tumblr_n324uxlOYd1rkrw3ao1_1280.jpg");
-      background-size: cover;
-      color: white;
+      color: black;
 }
 ul#nav {
     list-style-type: none;
 }
 
 .ipnd {
-    color: #e6e6e6;
-    font: bold 64px geneva; 
+    color: black;
+    font: bold 50px geneva; 
     text-align: center;
     padding: 5px;
 }
@@ -128,14 +282,6 @@ input {
     display: none;
 }
 
-.profile-pic {
-    width:10em;
-    height:10em;
-    border-radius:100%;
-    margin-bottom:10px;
-    padding:5px;
-    background:white;
-}
 
 .social-links .social{
     display: inline-block;
@@ -150,6 +296,19 @@ input {
     letter-spacing: 30px;
     font: 50px lighter;
     font-style: courier;
+    position:absolute;
+    text-align:center;
+    top: 50px;
+    width: 100%;
+    left:0;
+}
+
+.three-navs {
+    text-align: center;
+    width:100%;
+    left:0;
+    position:absolute;
+
 }
 
 .my-name {

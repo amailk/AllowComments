@@ -1,4 +1,4 @@
-html,body{
+html,body {
     height:100%;
     margin:0;
     background: white
@@ -16,7 +16,7 @@ html,body{
     -webkit-font-smoothing: subpixel-antialiased
 }
 
-.top{
+.top {
     background:url("http://36.media.tumblr.com/c078cec3240430c46b3a4321f9009a5c/tumblr_nzca753BKO1uuufk2o1_1280.jpg");
     background-attachment: fixed;
     background-position: center center;
@@ -25,13 +25,29 @@ html,body{
     width:100%;
     margin-bottom: 20px;
 }
+
 .middle.nav-bar {
     height:5%;
     width:100%;   
 }
+
+.three-navs {
+    text-align: center;
+    width:100%;
+    left:0;
+    position:absolute;
+}
+
+button {
+    background-color: #ffe5e5;
+    font: lighter 18px geneva; 
+    border-radius: 5px;
+    margin:5px;
+}
 #about {
     display: none;
 }
+
 #notes {
     display: none;
 }
@@ -57,15 +73,18 @@ html,body{
     padding: 4px;
     color: black;
 }
+
 .comment-list {
     padding: 15px;
 }
+
 .comment-author {
     border: 4px;
     background-color:#ffe5ff;
     font: bolder 24px geneva;
     padding: 4px;
 }
+
 input[type="submit"] {
     background-color: #ffe6cc;
     font-color: white;
@@ -83,6 +102,7 @@ input {
     margin: 10px auto;
     padding: 10px;
 }
+
 .comment-box h2 {
     font: 36px geneva; 
     padding-left: 15px;
@@ -101,13 +121,26 @@ input {
     margin: 20px;
 }
 
-a{  
+.name {
+    font-weight: bold;
+    font: 18px geneva;
+}
+
+.name-comment-box {
+    text-align: center;
+    width:100%;
+    left:0;
+    position:absolute;
+}
+
+a {  
     color:#7ab5fe;
     text-decoration: none;
 }
-a:hover{
+a:hover {
     color:#4fbfa6;
 }
+
 .clearfix:after {
      visibility: hidden;
      display: block;
@@ -115,7 +148,8 @@ a:hover{
      content: " ";
      clear: both;
      height: 0;
-     }
+}
+
 .clearfix { display: inline-block; }
 /* start commented backslash hack \*/
 * html .clearfix { height: 1%; }
@@ -127,7 +161,8 @@ a:hover{
     margin:0 auto;
     position: relative;
 }
-.avatar-container{
+
+.avatar-container {
     width:10em;
     text-align:center;
     position: absolute;
@@ -135,7 +170,7 @@ a:hover{
     top:-5em;
 }
 
-.avatar-container img.avatar{
+.avatar-container img.avatar {
     width:10em;
     height:10em;
     border-radius:100%;
@@ -143,30 +178,42 @@ a:hover{
     padding:5px;
     background:white;
 }
+.social-links .social{
+    display: inline-block;
+    border: none;
+    margin-right: 25px;
+    color:#000000;
+    font-weight:600;
+    font-size:1.6em;
+}
 
-.resume-left, .resume-right{
+.resume-left, .resume-right {
     float:left;
     width:30%;
     margin-top:50px;
 }
-.personal-info{
+
+.personal-info { 
     margin:60px 0px 0px 0px;
     padding:0;
     list-style:none;
 }
-.personal-info li{
+
+.personal-info li {
     font-size:0.8313rem;
     font-weight:300;
     margin-top:15px;
 }
-.personal-info li i{
+
+.personal-info li i {
     width:40px;
     font-size:1.2rem;
     display:inline-block;
     vertical-align:middle;
     text-align:center;
 }
-.personal-info li .fa-mobile{
+
+.personal-info li .fa-mobile {
     font-size:1.7em;
 }
 
@@ -180,7 +227,8 @@ a:hover{
     text-justify:inter-word;
    
 }
-.resume-content.bio{
+
+.resume-content.bio {
     padding:10px;
     text-align:justify;
     text-justify:inter-word;
@@ -189,6 +237,7 @@ a:hover{
 .social-links {
     padding:10px;
 }
+
 .social-links .social {
     display: inline-block;
     border: none;
@@ -218,14 +267,17 @@ a:hover{
     margin:0px;
 
 }
-.module{
+
+.module {
     margin-bottom:30px;
 }
+
 .module .title,.module .sub-title, .module2 .title {
     font-size:1.5em;
     font-weight:400;
 }
-.module .sub-title{
+
+.module .sub-title {
     font-size:20px;
     font-weight:300;
 }
@@ -261,6 +313,7 @@ ul#nav {
     color: #52514e;
     font-size: 18px;
 }
+
 h3 {
     font-weight:lighter;
 }
@@ -294,21 +347,6 @@ h3 {
     padding-right: 4px; 
 }
 
-.name {
-    font-weight: bold;
-    font: 18px geneva;
-}
-
-
-.social-links .social{
-    display: inline-block;
-    border: none;
-    margin-right: 25px;
-    color:#000000;
-    font-weight:600;
-    font-size:1.6em;
-}
-
 .main-title {
     letter-spacing: 30px;
     font: 50px lighter;
@@ -318,24 +356,4 @@ h3 {
     top: 50px;
     width: 100%;
     left:0;
-}
-
-.three-navs {
-    text-align: center;
-    width:100%;
-    left:0;
-    position:absolute;
-}
-
-button {
-    background-color: #ffe5e5;
-    font: lighter 18px geneva; 
-    border-radius: 5px;
-    margin:5px;
-}
-.name-comment-box {
-    text-align: center;
-    width:100%;
-    left:0;
-    position:absolute;
 }

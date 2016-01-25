@@ -4,13 +4,33 @@
         <meta charset="utf-8">
         <title> {% block title %} {% endblock %}</title>
         <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="scripts/main.js"></script>
     </head>
 
-    <body >
+    <body class="main-page" >
+        <div class="main-title">
+            <h1> (a)UDACIOUS </h1>
+        </div>
+        
+        <img class="profile-pic" src="https://pbs.twimg.com/profile_images/683218377398169600/XaJczQXt_400x400.jpg"></img>
 
-        <div>
+        <div class="social-links">
+            <a href="https://twitter.com/amailk" target="_blank">
+                <div class="social"><i class="fa fa-twitter"></i></div>
+            </a>
+            <a href="https://instagram.com/amailk" target="_blank">
+                <div class="social"><i class="fa fa-instagram"></i></div>
+            </a>
+            <a href="https://www.linkedin.com/in/ama-liyanage-5b31a2104?trk=hp-identity-name" target="_blank">
+                <div class="social"><i class="fa fa-linkedin"></i></div>
+            <a href="https://github.com/amailk" target="_blank">
+                <div class="social"><i class="fa fa-github"></i></div>
+            </a>
+        </div>
+        
+        <div class="three-navs">
             <button id="showAboutMe">About Ama</button>
             <button id="showNotes">Udacity Notes</button>
             <button id="showNextSteps">Next Steps</button>
@@ -25,51 +45,53 @@
             {% include "notes.html" %}
         </div>
 
-        <div id="next_steps">
+        <div id="next-steps">
             {% include "nextsteps.html" %}
         </div>
 
 
-        {% if comments %}
-            <div class= "comment-box" id="comments">
-                <h2>Comments</h2>
+        <div id="comment-wrapper">
+            {% if comments %}
+                <div class= "comment-box" id="comments">
+                    <h2>Comments</h2>
 
-                <ul class="comment-list">
-                    {% for comment in comments %}
-                        <li> 
-                            <div class="comment-author-box">
-                                <div class="comment-author"> {{ comment.name }} :</div> 
-                                <div class="comment-message"> {{ comment.message }} </div>
-                            </div>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        {% endif %}
-
-        <form action="/add_comment" method="post">
-            <div class="name-comment-box">
-                <div class = "name">
-                    Name <br/>
-                    <input name="name"/>
+                    <ul class="comment-list">
+                        {% for comment in comments %}
+                            <li> 
+                                <div class="comment-author-box">
+                                    <div class="comment-author"> {{ comment.name }} :</div> 
+                                    <div class="comment-message"> {{ comment.message }} </div>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
                 </div>
-                
-                <br/>
+            {% endif %}
 
-                <div class = "comment">
-                    Comment <br/>
-                    <textarea name="message" rows="3" cols="60"></textarea>
-                </div>
-                {% if invalid %}
-                    <div class="comment-error">
-                        <p> Sorry, your comment is invalid! Please try again </p>
+            <form action="/add_comment" method="post">
+                <div class="name-comment-box">
+                    <div class = "name">
+                        Name <br/>
+                        <input name="name"/>
                     </div>
-                {% endif %}
+                    
+                    <br/>
 
-                <div class = "post-comment">
-                    <input type="submit" value="Post Comment">
-                </div>
-            </div> 
-        </form>
+                    <div class = "comment">
+                        Comment <br/>
+                        <textarea name="message" rows="3" cols="60"></textarea>
+                    </div>
+                    {% if invalid %}
+                        <div class="comment-error">
+                            <p> Sorry, your comment is invalid! Please try again </p>
+                        </div>
+                    {% endif %}
+
+                    <div class = "post-comment">
+                        <input type="submit" value="Post Comment">
+                    </div>
+                </div> 
+            </form>
+        </div>
     </body>
 </html>

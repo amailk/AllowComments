@@ -2,8 +2,7 @@ body {
     padding: 20px 300px;
     font-family: geneva;
     max-width: 2000px;
-    margin: 0 auto; 
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Marble_pattern_008.jpg/1280px-Marble_pattern_008.jpg"); 
+    margin: 0 auto;  
 }
 
 header {
@@ -16,7 +15,7 @@ ul#nav {
     list-style-type: none;
 }
 
-.imp-concepts {
+.ipnd {
     color: #e6e6e6;
     font: bold 64px geneva; 
     text-align: center;
@@ -88,7 +87,6 @@ input[type="submit"] {
 }
 
 input {
-    border: 0;
     padding: 10px;
     font: bold 18px geneva; 
 }
@@ -122,6 +120,39 @@ input {
     display: none;
 }
 
-#next_steps {
+#next-steps {
     display: none;
 }
+
+#comment-wrapper {
+    display: none;
+}
+
+.profile-pic {
+    width:10em;
+    height:10em;
+    border-radius:100%;
+    margin-bottom:10px;
+    padding:5px;
+    background:white;
+}
+
+.social-links .social{
+    display: inline-block;
+    border: none;
+    margin-right: 25px;
+    color:#000000;
+    font-weight:600;
+    font-size:1.6em;
+}
+
+.main-title {
+    letter-spacing: 30px;
+    font: 50px lighter;
+    font-style: courier;
+}
+
+.my-name {
+    font: 30px arial;
+}
+

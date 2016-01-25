@@ -29,6 +29,77 @@ html,body{
     height:5%;
     width:100%;   
 }
+#about {
+    display: none;
+}
+#notes {
+    display: none;
+}
+
+#next-steps {
+    display: none;
+}
+
+#comment-wrapper {
+    display: none;
+}
+
+.comment {
+    font-weight: bold;
+    font: 18px geneva;
+
+}
+
+.comment-list li {
+    list-style: none;
+    background-color: white ;
+    margin: 10px;
+    padding: 4px;
+    color: black;
+}
+.comment-list {
+    padding: 15px;
+}
+.comment-author {
+    border: 4px;
+    background-color:#ffe5ff;
+    font: bolder 24px geneva;
+    padding: 4px;
+}
+input[type="submit"] {
+    background-color: #ffe6cc;
+    font-color: white;
+    font: 18px geneva; 
+    border-radius: 5px;
+}
+
+input {
+    padding: 10px;
+    font: 18px geneva; 
+}
+
+.comment-box {
+    background-color: #ffe6cc;
+    margin: 10px auto;
+    padding: 10px;
+}
+.comment-box h2 {
+    font: 36px geneva; 
+    padding-left: 15px;
+}
+
+.comment-message {
+    text-indent: 50px;
+}
+
+.comment-error {
+    color: #ff0000;
+    font: light 14px geneva; 
+}
+
+.name-comment-box {
+    margin: 20px;
+}
 
 a{  
     color:#7ab5fe;
@@ -227,76 +298,7 @@ h3 {
     font-weight: bold;
     font: 18px geneva;
 }
-.comment {
-    font-weight: bold;
-    font: 18px geneva;
 
-}
-
-.comment-list li {
-    list-style: none;
-    background-color: white ;
-    margin: 10px;
-    padding: 4px;
-    color: black;
-}
-.comment-list {
-    padding: 15px;
-}
-.comment-author {
-    border: 4px;
-    background-color:#ffe5ff;
-    font: bolder 24px geneva;
-    padding: 4px;
-}
-input[type="submit"] {
-    background-color: #ffe6cc;
-    font-color: white;
-    font: 18px geneva; 
-    border-radius: 5px;
-}
-
-input {
-    padding: 10px;
-    font: 18px geneva; 
-}
-
-.comment-box {
-    background-color: #ffe6cc;
-    margin: 10px auto;
-    padding: 10px;
-}
-.comment-box h2 {
-    font: 36px geneva; 
-    padding-left: 15px;
-}
-
-.comment-message {
-    text-indent: 50px;
-}
-
-.comment-error {
-    color: #ff0000;
-    font: light 14px geneva; 
-}
-
-.name-comment-box {
-    margin: 20px;
-}
-#about {
-    display: none;
-}
-#notes {
-    display: none;
-}
-
-#next-steps {
-    display: none;
-}
-
-#comment-wrapper {
-    display: none;
-}
 
 .social-links .social{
     display: inline-block;

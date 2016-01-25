@@ -23,6 +23,7 @@ html,body{
     background-size:cover;
     height:30%;
     width:100%;
+    margin-bottom: 20px;
 }
 .middle.nav-bar {
     height:5%;
@@ -99,15 +100,19 @@ a:hover{
 }
 
 .resume-content {
-    font-weight:300;
-    font-size:0.8313em;
+    font-weight:lighter;
+    font-size:18px;
     line-height:1.4em;
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: subpixel-antialiased
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-align:justify;
+    text-justify:inter-word;
    
 }
 .resume-content.bio{
-     padding:10px;
+    padding:10px;
+    text-align:justify;
+    text-justify:inter-word;
 }
 
 .social-links {
@@ -128,17 +133,17 @@ a:hover{
     box-sizing:border-box;
 }
 
-.my-name {
-    color:#7ab5fe;
-    font-size:26pt;
-    font-weight:300;
+.ama-liyanage {
+    color:#000000;
+    font-size:48px;
+    font-weight:bold;
     margin:0px 0px 20px 0px;
-
 }
+
 .edu-experience {
-    color:#7ab5fe;
-    font-size:12pt;
-    font-weight: 600;
+    color:#000000;
+    font-size:36px;
+    font-weight: lighter;
     margin:0px;
 
 }
@@ -146,11 +151,11 @@ a:hover{
     margin-bottom:30px;
 }
 .module .title,.module .sub-title, .module2 .title {
-    font-size:0.813em;
+    font-size:1.5em;
     font-weight:400;
 }
 .module .sub-title{
-    font-size:13px;
+    font-size:20px;
     font-weight:300;
 }
 
@@ -161,10 +166,6 @@ body {
     margin: 0 auto;  
 }
 
-header {
-      text-align: center;
-      color: black;
-}
 ul#nav {
     list-style-type: none;
 }
@@ -173,36 +174,40 @@ ul#nav {
     color: black;
     font: bold 50px geneva; 
     text-align: center;
-    padding: 5px;
+    padding: 15px;
+    letter-spacing: 15px;
+    margin:60px 0px 20px 0px;
 }
 
-h2 {
+.lesson-box h2 {
     color: #52514e;
     font-size: 36px; 
-    font-weight: bolder; 
+    font-weight: lighter; 
     margin: 10px;
 }
 
 .concept-title {
     color: #52514e;
     font-size: 18px;
-    font-weight: bolder;
+}
+h3 {
+    font-weight:lighter;
 }
 
 .lesson-box {
-    border-color: #0d0d0d;
-    border-radius: 20px;
-    background-color: #b6b8be;
+    border-radius: 0px;
+    background-color: #ffe5e5;
     margin: 10px auto;
     padding: 10px;
 }
 
 .concept-box {
-    background-color: #e0e0dc;
+    background-color: white;
     margin: 10px;
-    padding: 4px;
+    padding: 5px;
     border-radius: 4px;
     color: black;
+    font-weight: lighter;
 }
 
 .concept-description {
@@ -219,43 +224,51 @@ h2 {
 }
 
 .name {
-    font-weight: bolder;
-    font-size: 18px;
+    font-weight: bold;
+    font: 18px geneva;
+}
+.comment {
+    font-weight: bold;
+    font: 18px geneva;
+
 }
 
 .comment-list li {
     list-style: none;
-    background-color: #e0e0dc;
+    background-color: white ;
     margin: 10px;
     padding: 4px;
-    border-radius: 4px;
     color: black;
 }
-
+.comment-list {
+    padding: 15px;
+}
+.comment-author {
+    border: 4px;
+    background-color:#ffccff;
+    font: bolder 24px geneva;
+    padding: 4px;
+}
 input[type="submit"] {
-    background: #b6b8be;
-    color: white;
-    font: bold 18px geneva; 
-    font-weight: light;
+    background-color: #ffe6cc;
+    font-color: white;
+    font: 18px geneva; 
     border-radius: 5px;
 }
 
 input {
     padding: 10px;
-    font: bold 18px geneva; 
+    font: 18px geneva; 
 }
 
 .comment-box {
-    border-color: #0d0d0d;
-    border-radius: 20px;
-    background-color: #ffe5e5;
+    background-color: #ffe6cc;
     margin: 10px auto;
     padding: 10px;
-    margin: 0 auto; 
 }
 .comment-box h2 {
-    color: black;
-    font: bold 18px geneva; 
+    font: 36px geneva; 
+    padding-left: 15px;
 }
 
 .comment-message {
@@ -264,9 +277,12 @@ input {
 
 .comment-error {
     color: #ff0000;
-    font: bolder 14px geneva; 
+    font: light 14px geneva; 
 }
 
+.name-comment-box {
+    margin: 20px;
+}
 #about {
     display: none;
 }
@@ -281,7 +297,6 @@ input {
 #comment-wrapper {
     display: none;
 }
-
 
 .social-links .social{
     display: inline-block;
@@ -308,10 +323,17 @@ input {
     width:100%;
     left:0;
     position:absolute;
-
 }
 
-.my-name {
-    font: 30px arial;
+button {
+    background-color: #ffe5e5;
+    font: lighter 18px geneva; 
+    border-radius: 5px;
+    margin:5px;
 }
-
+.name-comment-box {
+    text-align: center;
+    width:100%;
+    left:0;
+    position:absolute;
+}

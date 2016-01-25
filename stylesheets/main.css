@@ -1,18 +1,26 @@
 body {
-    padding: 20px 10px;
+    padding: 20px 300px;
     font-family: geneva;
     max-width: 2000px;
     margin: 0 auto; 
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Marble_pattern_008.jpg/1280px-Marble_pattern_008.jpg"); 
 }
 
-h1 {
-    color: #171717;
+header {
+      text-align: center;
+      background: url("http://40.media.tumblr.com/1828cfe2020472f3edabc680ad0e2326/tumblr_n324uxlOYd1rkrw3ao1_1280.jpg");
+      background-size: cover;
+      color: white;
+}
+ul#nav {
+    list-style-type: none;
+}
+
+.imp-concepts {
+    color: #e6e6e6;
     font: bold 64px geneva; 
-    background-color: #52514e;
     text-align: center;
     padding: 5px;
-    border: 3px solid #242626;  
 }
 
 h2 {
@@ -107,3 +115,13 @@ input {
     font: bolder 14px geneva; 
 }
 
+#about {
+    display: none;
+}
+#notes {
+    display: none;
+}
+
+#next_steps {
+    display: none;
+}

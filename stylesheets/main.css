@@ -1,10 +1,12 @@
-html,body {
+html,
+body {
     height:100%;
     margin:0;
     background: white
 }
+
 .main-page {
-    color:#4c4c4c;
+    color: #4c4c4c;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -17,33 +19,34 @@ html,body {
 }
 
 .top {
-    background:url("http://36.media.tumblr.com/c078cec3240430c46b3a4321f9009a5c/tumblr_nzca753BKO1uuufk2o1_1280.jpg");
+    background: url("http://36.media.tumblr.com/c078cec3240430c46b3a4321f9009a5c/tumblr_nzca753BKO1uuufk2o1_1280.jpg");
     background-attachment: fixed;
     background-position: center center;
-    background-size:cover;
-    height:30%;
-    width:100%;
+    background-size: cover;
+    height: 30%;
+    width: 100%;
     margin-bottom: 20px;
 }
 
 .middle.nav-bar {
-    height:5%;
-    width:100%;   
+    height: 5%;
+    width: 100%;   
 }
 
 .three-navs {
     text-align: center;
-    width:100%;
-    left:0;
-    position:absolute;
+    width: 100%;
+    left: 0;
+    position: absolute;
 }
 
 button {
     background-color: #ffe5e5;
-    font: lighter 18px geneva; 
+    font: lighter 18px 'Geneva'; 
     border-radius: 5px;
-    margin:5px;
+    margin: 5px;
 }
+
 #about {
     display: none;
 }
@@ -62,7 +65,7 @@ button {
 
 .comment {
     font-weight: bold;
-    font: 18px geneva;
+    font: 18px 'Geneva';
 
 }
 
@@ -80,21 +83,21 @@ button {
 
 .comment-author {
     border: 4px;
-    background-color:#ffe5ff;
-    font: bolder 24px geneva;
+    background-color: #ffe5ff;
+    font: bolder 24px 'Geneva';
     padding: 4px;
 }
 
 input[type="submit"] {
     background-color: #ffe6cc;
     font-color: white;
-    font: 18px geneva; 
+    font: 18px 'Geneva'; 
     border-radius: 5px;
 }
 
 input {
     padding: 10px;
-    font: 18px geneva; 
+    font: 18px 'Geneva'; 
 }
 
 .comment-box {
@@ -104,7 +107,7 @@ input {
 }
 
 .comment-box h2 {
-    font: 36px geneva; 
+    font: 36px 'Geneva'; 
     padding-left: 15px;
 }
 
@@ -114,7 +117,7 @@ input {
 
 .comment-error {
     color: #ff0000;
-    font: light 14px geneva; 
+    font: light 14px 'Geneva'; 
 }
 
 .name-comment-box {
@@ -123,22 +126,23 @@ input {
 
 .name {
     font-weight: bold;
-    font: 18px geneva;
+    font: 18px 'Geneva';
 }
 
 .name-comment-box {
     text-align: center;
-    width:100%;
-    left:0;
-    position:absolute;
+    width: 100%;
+    left: 0;
+    position: absolute;
 }
 
 a {  
-    color:#7ab5fe;
+    color: #7ab5fe;
     text-decoration: none;
 }
+
 a:hover {
-    color:#4fbfa6;
+    color: #4fbfa6;
 }
 
 .clearfix:after {
@@ -156,115 +160,115 @@ a:hover {
 .clearfix { display: block; }
 
 .profile {
-    width:50em;
+    width: 50em;
     background: white;
-    margin:0 auto;
+    margin: 0 auto;
     position: relative;
 }
 
 .avatar-container {
-    width:10em;
-    text-align:center;
+    width: 10em;
+    text-align: center;
     position: absolute;
-    left:15px;
-    top:-5em;
+    left: 15px;
+    top: -5em;
 }
 
 .avatar-container img.avatar {
-    width:10em;
-    height:10em;
-    border-radius:100%;
-    margin-bottom:10px;
-    padding:5px;
-    background:white;
+    width: 10em;
+    height: 10em;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    background: white;
 }
+
 .social-links .social{
     display: inline-block;
     border: none;
     margin-right: 25px;
-    color:#000000;
-    font-weight:600;
-    font-size:1.6em;
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.6em;
 }
 
 .resume-left, .resume-right {
-    float:left;
-    width:30%;
-    margin-top:50px;
+    float: left;
+    width: 30%;
+    margin-top: 50px;
 }
 
 .personal-info { 
-    margin:60px 0px 0px 0px;
-    padding:0;
-    list-style:none;
+    margin: 60px 0px 0px 0px;
+    padding: 0;
+    list-style: none;
 }
 
 .personal-info li {
-    font-size:0.8313rem;
-    font-weight:300;
-    margin-top:15px;
+    font-size: 0.8313rem;
+    font-weight: 300;
+    margin-top: 15px;
 }
 
 .personal-info li i {
-    width:40px;
-    font-size:1.2rem;
-    display:inline-block;
-    vertical-align:middle;
-    text-align:center;
+    width: 40px;
+    font-size: 1.2rem;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .personal-info li .fa-mobile {
-    font-size:1.7em;
+    font-size: 1.7em;
 }
 
 .resume-content {
-    font-weight:lighter;
-    font-size:18px;
-    line-height:1.4em;
+    font: lighter 18px;
+    line-height: 1.4em;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: subpixel-antialiased;
-    text-align:justify;
-    text-justify:inter-word;
+    text-align: justify;
+    text-justify: inter-word;
    
 }
 
 .resume-content.bio {
-    padding:10px;
-    text-align:justify;
-    text-justify:inter-word;
+    padding: 10px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .social-links {
-    padding:10px;
+    padding: 10px;
 }
 
 .social-links .social {
     display: inline-block;
     border: none;
     margin-right: 25px;
-    color:#000000;
-    font-weight:600;
-    font-size:1.6em;
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.6em;
 }
 
 .resume-right {
-    width:70%;
-    padding:0px 0px 0px 45px;
-    box-sizing:border-box;
+    width: 70%;
+    padding: 0px 0px 0px 45px;
+    box-sizing: border-box;
 }
 
 .ama-liyanage {
-    color:#000000;
-    font-size:48px;
-    font-weight:bold;
+    color: #000000;
+    font-weight: bold;
+    font-size: 48px;
     margin:0px 0px 20px 0px;
 }
 
 .edu-experience {
-    color:#000000;
-    font-size:36px;
+    color: #000000;
+    font-size: 36px;
     font-weight: lighter;
-    margin:0px;
+    margin: 0px;
 
 }
 
@@ -273,15 +277,14 @@ a:hover {
 }
 
 .module .title,.module .sub-title, .module2 .title {
-    font-size:1.5em;
-    font-weight:400;
+    font-size: 1.5em;
+    font-weight: 400;
 }
 
 .module .sub-title {
-    font-size:20px;
-    font-weight:300;
+    font-size: 20px;
+    font-weight: 300;
 }
-
 
 body {
     padding: 20px 300px;
@@ -295,11 +298,11 @@ ul#nav {
 
 .ipnd {
     color: black;
-    font: bold 50px geneva; 
+    font: bold 50px 'Geneva'; 
     text-align: center;
     padding: 15px;
     letter-spacing: 15px;
-    margin:60px 0px 20px 0px;
+    margin: 60px 0px 20px 0px;
 }
 
 .lesson-box h2 {
@@ -348,12 +351,11 @@ h3 {
 }
 
 .main-title {
+    font: 40px 'Courier-new';
     letter-spacing: 30px;
-    font: 50px lighter;
-    font-style: courier;
-    position:absolute;
-    text-align:center;
+    position: absolute;
+    text-align: center;
     top: 50px;
     width: 100%;
-    left:0;
+    left: 0;
 }

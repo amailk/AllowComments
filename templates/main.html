@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title> {% block title %} {% endblock %}</title>
@@ -10,10 +11,11 @@
 </head>
 
 <section class="top">
-<body class="main-page">
-    <div class="main-title">
-        <h1> (a)UDACIOUS </h1> 
-    </div>
+
+    <body class="main-page">
+        <div class="main-title">
+            <h1> (a)UDACIOUS </h1>
+        </div>
 </section>
 
 <section class="middle">
@@ -26,67 +28,70 @@
     </div>
 </section>
 
-    <!-- Main page content will be inserted in here -->
-    <div id="about">
-        {% include "aboutme.html" %}
-    </div>
+<!-- Main page content will be inserted in here -->
+<div id="about">
+    {% include "aboutme.html" %}
+</div>
 
-    <div id="notes">
-        {% include "notes.html" %}
-    </div>
+<div id="notes">
+    {% include "notes.html" %}
+</div>
 
-    <div id="next-steps">
-        {% include "nextsteps.html" %}
-    </div>
-    
-    <!--Comment section starts -->
+<div id="next-steps">
+    {% include "nextsteps.html" %}
+</div>
 
-    <div id="comment-wrapper">
-        {% if comments %}
-            <div class= "comment-box" id="comments">
-                <h2>Comments</h2>
+<!--Comment section starts -->
 
-                <ul class="comment-list">
-                    {% for comment in comments %}
-                        <li> 
-                            <div class="comment-author-box">
-                                <div class="comment-author"> {{ comment.name }} :</div> 
-                                <div class="comment-message"> {{ comment.message }} </div>
-                            </div>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        {% endif %}
+<div id="comment-wrapper">
+    {% if comments %}
+    <div class="comment-box" id="comments">
+        <h2>Comments</h2>
 
-        <form action="/add_comment" method="post">
-            <div class="name-comment-box">
-                <div class = "name">
-                    Name <br/>
-                    <input name="name"/>
+        <ul class="comment-list">
+            {% for comment in comments %}
+            <li>
+                <div class="comment-author-box">
+                    <div class="comment-author"> {{ comment.name }} :</div>
+                    <div class="comment-message"> {{ comment.message }} </div>
                 </div>
-                
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+    <form action="/add_comment" method="post">
+        <div class="name-comment-box">
+            <div class="name">
+                Name
                 <br/>
+                <input name="name" />
+            </div>
 
-                <div class = "comment">
-                    Comment <br/>
-                    <textarea name="message" rows="3" cols="60"></textarea>
-                </div>
-                {% if invalid %}
-                    <div class="comment-error">
-                        <p> Sorry, your comment is invalid! Please try again </p>
-                    </div>
-                {% endif %}
+            <br/>
 
-                <div class = "post-comment">
-                    </br>
-                    <input type="submit"value="Post Comment">
+            <div class="comment">
+                Comment
+                <br/>
+                <textarea name="message" rows="3" cols="60"></textarea>
+            </div>
+            {% if invalid %}
+            <div class="comment-error">
+                <p> Sorry, your comment is invalid! Please try again </p>
+            </div>
+            {% endif %}
 
-                </div>
-            </div> 
-        </form>
-    </div>
+            <div class="post-comment">
+                </br>
+                <input type="submit" value="Post Comment">
 
-    <!--Comment section ends-->
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--Comment section ends-->
 </body>
+
 </html>
